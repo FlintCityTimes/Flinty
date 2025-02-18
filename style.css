@@ -137,21 +137,22 @@ label {
 button {
   padding: 5px 10px;
   font-size: 14px;
-  font-color: #FFFFFF;
   cursor: pointer;
-  border: 1px solid #aaa;
-  border-radius: 1px;
-  background-color: #000000;
-  color: black;
-  transition: background-color 0.3s ease;
+  border: 1px solid white; /* 1px white outline */
+  border-radius: 2px;
+  background-color: black; /* Black background */
+  color: white; /* White text */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 button:hover {
-  background-color: #5aa09a;
+  background-color: white;
+  color: black;
 }
 
 button:active {
-  background-color: #407874;
+  background-color: #333; /* Dark gray for pressed effect */
+  color: white;
 }
 
 /* Reduce gap between stats and buttons */

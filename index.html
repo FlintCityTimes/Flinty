@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=.8"/>
+  <title>Flinty the Fox - Virtual Pet</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/aqu1kwk.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Flinty the Fox</h1>
+    <div class="flinty-container">
+      <!-- The animated sprite will be controlled via JavaScript -->
+      <div id="flinty" class="idle"></div>
+    </div>
+    <div class="stats-bars">
+      <div class="stat-bar">
+        <label for="hunger-bar">Hunger</label>
+        <div id="hunger-bar" class="bar"><div class="fill" id="hunger-fill"></div></div>
+      </div>
+      <div class="stat-bar">
+        <label for="happiness-bar">Happiness</label>
+        <div id="happiness-bar" class="bar"><div class="fill" id="happiness-fill"></div></div>
+      </div>
+      <div class="stat-bar">
+        <label for="energy-bar">Energy</label>
+        <div id="energy-bar" class="bar"><div class="fill" id="energy-fill"></div></div>
+      </div>
+    </div>
+    <div class="buttons">
+      <button onclick="feedFlinty()">Feed</button>
+      <button onclick="playWithFlinty()">Play</button>
+      <button onclick="putFlintyToSleep()">Sleep</button>
+<button id="music-btn" onclick="toggleMusic()">Music</button>
+<audio id="background-music" loop>
+  <source src="flintys adventure.mp3" type="audio/mpeg">
+</audio>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+/* Center the game title and buttons */
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end; /* Aligns elements towards the bottom */
+  height: 100vh; /* Full screen height */
+  position: relative;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Style the title */
+h1 {
+  margin: 0;
+  font-family: "amador", sans-serif;
+  font-size: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Flinty Container - Positioned at the bottom of its own area */
+.flinty-container {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+  background: url("images/background.png") no-repeat center bottom;
+  background-size: cover;
+}
+
+/* Flinty itself should also align to the bottom */
+#flinty {
+  position: absolute;
+  bottom: 0;
+  width: 60px;
+  height: 60px;
+}
+
+/* Simplified Animation Classes */
+#flinty.idle {
+  background: url("images/flinty-idle-12fps.gif") no-repeat;
+  background-size: cover;
+}
+
+#flinty.idle2 {
+  background: url("images/flinty-idle2-12fps.gif") no-repeat;
+  background-size: cover;
+}
+
+#flinty.eating {
+  background: url("images/flinty-eating-12fps.gif") no-repeat;
+  background-size: cover;
+}
+
+#flinty.playing {
+  background: url("images/flinty-playing-12fps.gif") no-repeat;
+  background-size: cover;
+}
+
+#flinty.sleeping {
+  background: url("images/flinty-sleeping-12fps.gif") no-repeat;
+  background-size: cover;
+}
+
+#flinty.hungry {
+  background: url("images/flinty-hungry-12fps.gif") no-repeat;
+  background-size: cover;
+}
+
+#flinty.tired {
+  background: url("images/flinty-tired-12fps.gif") no-repeat;
+  background-size: cover;
+}
+
+#flinty.sick {
+  background: url("images/flinty-sick-6fps.gif") no-repeat;
+  background-size: cover;
+}
+
+#flinty.hurt {
+  background: url("images/flinty-hurt-16fps.gif") no-repeat;
+  background-size: cover;
+}
+
+
+/* Stats Bars (Above Buttons) */
+.stats-bars {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.stat-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60px; /* Compact width */
+}
+
+label {
+  font-size: 10px;
+  margin-bottom: 2px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.bar {
+  width: 100%;
+  height: 8px; /* Smaller height */
+  background-color: #ddd;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.bar .fill {
+  height: 100%;
+  background-color: #76c7c0;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Buttons Centered Below Bars */
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 1px;
+}
+
+button {
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid #aaa;
+  border-radius: 1px;
+  background-color: #76c7c0;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #5aa09a;
+}
+
+button:active {
+  background-color: #407874;
+}
+
+/* Reduce gap between stats and buttons */
+.stats, .buttons {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}

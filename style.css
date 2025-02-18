@@ -140,8 +140,8 @@ button {
   cursor: pointer;
   border: 1px solid #aaa;
   border-radius: 1px;
-  background-color: #76c7c0;
-  color: white;
+  background-color: #000000;
+  color: black;
   transition: background-color 0.3s ease;
 }
 
